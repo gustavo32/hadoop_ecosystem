@@ -1,10 +1,5 @@
 from pyspark.sql import SparkSession
-
-def rename_cols(df, new_columns, old_columns=None):
-    if old_columns is None:
-        old_columns = df.schema.names
-
-    return df.selectExpr(*['{} as {}'.format(old, new) for old, new in zip(old_columns, new_columns)])
+from utils import rename_cols
 
 if __name__ == '__main__':
     spark = SparkSession.builder.appName('worstMovies').getOrCreate()
@@ -24,5 +19,7 @@ if __name__ == '__main__':
 
     for row in ordered_df.take(10):
         print(row)
+
+    spark.stop()
     
 

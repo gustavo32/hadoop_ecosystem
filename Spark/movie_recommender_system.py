@@ -27,8 +27,8 @@ if __name__ == '__main__':
     )
 
     param_grid = ParamGridBuilder() \
-                .addGrid(als.rank, [10, 50, 100, 150]) \
-                .addGrid(als.regParam, [.01, .05, .1, .15]) \
+                .addGrid(als.rank, [5, 10, 50]) \
+                .addGrid(als.regParam, [.01, .05, .1]) \
                 .build()
 
     evaluator = RegressionEvaluator(
@@ -48,6 +48,8 @@ if __name__ == '__main__':
 
     recommendations = best_model.recommendForAllUsers(5)
     recommendations.show()
+
+    spark.stop()
 
     # nrecommendations = nrecommendations\
     #     .withColumn("rec_exp", explode("recommendations"))\

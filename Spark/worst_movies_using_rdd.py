@@ -1,18 +1,5 @@
 from pyspark import SparkConf, SparkContext
-
-def parseInput(line):
-    (userId, movieId, rating, timestamp) = line.split('\t')
-    return (int(movieId), (float(rating), 1.0))
-
-def getMapTitlesById():
-    title_by_id = {}
-    with open('data/movies.item', 'rb') as f:    
-        for line in f:
-            fields = line.split('|')
-            title_by_id[int(fields[0])] = fields[1]
-
-    return title_by_id
-
+from utils import getMapTitlesById, parseInput
 
 if __name__ == '__main__':
     conf = SparkConf().setAppName('WorstMovies')
