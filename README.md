@@ -6,7 +6,7 @@ For now, the studied subjects are:
     <li>HDFS</li>
     <li>MapReduce</li>
     <li>Pig</li>
-    <li>Spark</li>
+    <li>Spark (RDD, Datasets, MLLib)</li>
 </ul>
 
 For most of these subjects, you can see scripts dealing with the main concepts of each technology.
