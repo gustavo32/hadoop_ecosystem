@@ -1,4 +1,4 @@
-<img src='https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ibm.com%2Fanalytics%2Fhadoop%2Fhbase&psig=AOvVaw1YjtBMEiflMrLpR09N5SQl&ust=1612470724622000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCODy2NjHzu4CFQAAAAAdAAAAABAJ' alt='HBase logo'></img>
+<img src='https://1.cms.s81c.com/sites/default/files/styles/band_inline_image_standard/public/2019-06/apache-hbase-logo_0.png?itok=GfW4z5QC' alt='HBase logo'></img>
 
 <h2>HBase Section</h2>
 
