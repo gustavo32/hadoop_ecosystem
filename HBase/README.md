@@ -1,4 +1,6 @@
-<img src='https://1.cms.s81c.com/sites/default/files/styles/band_inline_image_standard/public/2019-06/apache-hbase-logo_0.png?itok=GfW4z5QC' alt='HBase logo'></img>
+<div style='text-align:center'>
+    <img src='https://1.cms.s81c.com/sites/default/files/styles/band_inline_image_standard/public/2019-06/apache-hbase-logo_0.png?itok=GfW4z5QC' alt='HBase logo' width='500px'></img>
+</div>
 
 <h2>HBase Section</h2>
 
