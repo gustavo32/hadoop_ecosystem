@@ -1,9 +1,0 @@
-# First, create your table on mysql to hadoop export to it:
-mysql -u root -p
-CREATE DATABASE movielens;
-USE movielens;
-CREATE TABLE movies (movieId INTEGER, title VARCHAR(255), releaseDate DATE);
-exit
-
-# After, export the hive table to mysql with the following command:
-sqoop export --connect jdbc:mysql://localhost/movielens --driver com.mysql.jdbc.Driver --table movies --export-dir /apps/hive/warehouse/movies --input-fields-terminated-by '\0001' --username `YOUR_USERNAME` --password `YOUR_PASSWORD`
