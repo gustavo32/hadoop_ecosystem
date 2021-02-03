@@ -1,4 +1,4 @@
-<div style='text-align: center; align: center'>
+<div align='center' style='text-align: center; align: center'>
     <img align='center' src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Apache_Hive_logo.svg/1024px-Apache_Hive_logo.svg.png' alt='Hive logo' width='500px'></img>
 </div>
 
