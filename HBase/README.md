@@ -9,4 +9,4 @@
 <h3>Enable the REST service on top of HBase</h3>
 <p>First, start HBase service, then enable a port in the server to communicate with your client. After that, start the REST Server on top hadoop with (if you are using the HDP, type):</p>
 
-<code>/usr/hdp/current/hbase-master/bin/hbase-daemon.sh start rest -p 8001 --infoport 8002</code>
+<code>/usr/hdp/current/hbase-master/bin/hbase-daemon.sh start rest -p 8001 --infoport 8002</code><br/>
