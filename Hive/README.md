@@ -1,4 +1,6 @@
+<center>
 <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Apache_Hive_logo.svg/1024px-Apache_Hive_logo.svg.png' alt='Hive logo'></img>
+</center>
 
 <h2>Hive Section</h2>
 
