@@ -11,10 +11,10 @@
 <p>Set the database privileges to the server, to be possible import data to hive</p>
 <code>mysql -u root -p</code><br/>
 <code>GRANT ALL PRIVILEGES ON movielens.* TO ''@'localhost';</code><br/>
-<code>exit</code><br/>
+<code>exit</code><br/><br/>
 
 <p>After that, import data with sqoop:</p>
-<code>sqoop import --connect jdbc:mysql://localhost/movielens --driver com.mysql.jdbc.Driver -- table movies</code><br/>
+<code>sqoop import --connect jdbc:mysql://localhost/movielens --driver com.mysql.jdbc.Driver -- table movies</code><br/><br/>
 
 
 <h3>Export data to MySQL from Hive</h3>
@@ -24,10 +24,10 @@
 <code>CREATE DATABASE movielens;</code><br/>
 <code>USE movielens;</code><br/>
 <code>CREATE TABLE movies (movieId INTEGER, title VARCHAR(255), releaseDate DATE);</code><br/>
-<code>exit</code><br/>
+<code>exit</code><br/><br/>
 
 <p>After, export the hive table to mysql with the following command:</p>
-<code>sqoop export --connect jdbc:mysql://localhost/movielens --driver com.mysql.jdbc.Driver --table movies --export-dir /apps/hive/warehouse/movies --input-fields-terminated-by '\0001' --username `YOUR_USERNAME` --password `YOUR_PASSWORD`</code><br/>
+<code>sqoop export --connect jdbc:mysql://localhost/movielens --driver com.mysql.jdbc.Driver --table movies --export-dir /apps/hive/warehouse/movies --input-fields-terminated-by '\0001' --username `YOUR_USERNAME` --password `YOUR_PASSWORD`</code><br/><br/>
 
 <h3>Codes using HiveQL</h3>
 <ul>
