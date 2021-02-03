@@ -1,0 +1,9 @@
+# Set the database privileges to the server, to be possible import data to hive
+mysql -u root -p
+GRANT ALL PRIVILEGES ON movielens.* TO ''@'localhost';
+exit
+
+# After that, import data with sqoop:
+sqoop import --connect jdbc:mysql://localhost/movielens --driver com.mysql.jdbc.Driver -- table movies -m 1
+
+
