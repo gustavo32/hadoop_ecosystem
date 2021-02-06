@@ -7,6 +7,9 @@ For now, the studied subjects are:
     <li>MapReduce</li>
     <li>Pig</li>
     <li>Spark (RDD, Datasets, MLLib)</li>
+    <li>Hive</li>
+    <li>HBase</li>
+    <li>Sqoop</li>
 </ul>
 
 For most of these subjects, you can see scripts dealing with the main concepts of each technology.
