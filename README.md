@@ -8,8 +8,9 @@ For now, the studied subjects are:
     <li>Pig</li>
     <li>Spark (RDD, Datasets, MLLib)</li>
     <li>Hive</li>
-    <li>HBase</li>
+    <li>NoSQL (HBase, MongoDB, Cassandra)</li>
     <li>Sqoop</li>
+    <li>Interactive Query (Drill, Presto)</li>
 </ul>
 
 For most of these subjects, you can see scripts dealing with the main concepts of each technology.
