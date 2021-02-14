@@ -11,3 +11,9 @@
 
 <code>sudo su</code><br/>
 <code>/usr/hdp/current/hbase-master/bin/hbase-daemon.sh start rest -p 8001 --infoport 8002</code><br/>
+
+<h2>Considerations</h2>
+<p>To run the codes in this folder, is necessary properly install cassandra and mongoDB to your cluster.</p>
+<p>Remember, mongoDB does not create a default index as Cassandra, so create one over the primary key to get the data more efficiently. To that, use the following code (1 - ascending order; 2 - descending order):</p>
+<code>db.`your_collection_name`.createIndex({`your_primary_key`: 1})</code><br/>
+
